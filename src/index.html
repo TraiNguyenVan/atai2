@@ -7,36 +7,107 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
             <nav class = "nav">
-                <h1>Travelbuddy</h1>
+                <h1>Du lịch Quảng Bình </h1>
                 <ul class = "navbar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><button id="lo">Login</button></li>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Thông tin</a></li>
+                    <li><a href="https://web.facebook.com/taiwr07">Liên hệ</a></li>
+                    <li><button id="lo">Đăng nhập</button></li>
                 </ul>
             </nav>
     </header>
 
-    <video src="Nusa-penida.mp4" muted loop autoplay></video>
+    <!-- <video src="pnkb.mkv" muted loop autoplay><    /video> -->
+    <!-- <img src="./" alt=""> -->
     
-    <div class="glass">
+    <!-- <div class="glass">
     <div class="info">
-        <h1>Book Today !</h1><br>
+        <h1>Động Phong Nha</h1><br>
         <div class="sub">
-             <p>Enjoy the best tour experiences <br>
-             travelbuddy has to offer</p> 
+             <p><br>
+             </p> 
         </div>
     </div>
 
-        <button id="but">Book now</button>
+        <button id="but" onclick="window.location.href='https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99ng_Phong_Nha'">Khám phá ngay</button>
+    </div> -->
+
+    <div class="carousel-container">
+        <button class="carousel-btn left" onclick="prevBlock()">&#8592;</button>
+        <div class="carousel">
+            <div class="block active" data-bg="dpn.jpg">
+                <div class="block-content">
+                    <h2 style="font-family: 'Varela Round', sans-serif;">Động Phong Nha</h2>
+                    <p style="font-family: 'Varela Round', sans-serif;">Khám phá vẻ đẹp kỳ vĩ của Động Phong Nha.</p>
+                    <button class="but"  onclick="window.location.href='https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99ng_Phong_Nha'">Khám phá ngay</button>
+                </div>
+            </div>
+            <div class="block" data-bg="sondoong.jpg">
+                <div class="block-content">
+                    <h2 style="font-family: 'Varela Round', sans-serif;">Hang Sơn Đoòng</h2>
+                    <p style="font-family: 'Varela Round', sans-serif;">Hang động lớn nhất thế giới với hệ sinh thái độc đáo.</p>
+                    <button class="but" onclick="window.location.href='https://vi.wikipedia.org/wiki/Hang_S%C6%A1n_%C4%90o%C3%B2ng'">Khám phá ngay</button>
+                </div>
+            </div>
+            <div class="block" data-bg="nhatle.jpg">
+                <div class="block-content">
+                    <h2 style="font-family: 'Varela Round', sans-serif;">Biển Nhật Lệ</h2>
+                    <p style="font-family: 'Varela Round', sans-serif;">Bãi biển tuyệt đẹp với cát trắng và nước trong xanh.</p>
+                    <button class="but" onclick="window.location.href='https://vi.wikipedia.org/wiki/Bi%E1%BB%83n_Nh%E1%BA%ADt_L%E1%BB%87'">Khám phá ngay</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn right" onclick="nextBlock()">&#8594;</button>
     </div>
+
+    <script>
+        // filepath: /workspaces/atai2/src/index.html
+        let current = 0;
+        const blocks = document.querySelectorAll('.block');
+        // Set background images for each block (không còn hiệu ứng mờ trắng)
+        blocks.forEach(block => {
+            const bg = block.getAttribute('data-bg');
+            if(bg) {
+                block.style.backgroundImage = `url('${bg}')`;
+                block.style.backgroundSize = 'cover';
+                block.style.backgroundPosition = 'center';
+            }
+        });
+        function showBlock(idx) {
+            blocks.forEach((b, i) => {
+                b.classList.toggle('active', i === idx);
+                b.classList.toggle('left', i === (idx - 1 + blocks.length) % blocks.length);
+                b.classList.toggle('right', i === (idx + 1) % blocks.length);
+            });
+        }
+        function prevBlock() {
+            current = (current - 1 + blocks.length) % blocks.length;
+            showBlock(current);
+        }
+        function nextBlock() {
+            current = (current + 1) % blocks.length;
+            showBlock(current);
+        }
+        showBlock(current);
+    </script>
+
+    <footer style="width:100%;padding:32px 0 24px 0; background:transparent; text-align:center; color:#eaf6fb; font-family:'Varela Round',sans-serif; font-size:18px;">
+        <div>
+            <strong>Liên hệ:</strong> <br>
+            Facebook: <a href="https://web.facebook.com/taiwr07" style="color:#2BD9FE;text-decoration:none;">Dương Công Tài</a> <br>
+            Điện thoại: <a href="tel:+84123456789" style="color:#2BD9FE;text-decoration:none;">0123 456 789</a> <br>
+            Địa chỉ: Xã Tân Thủy, Huyện Lệ Thủy, Tỉnh Quảng Bình <br>
+        </div>
+        <div style="margin-top:12px;font-size:15px;color:#8fa6b2;">
+            &copy; 2025 Công Tài Travel. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
