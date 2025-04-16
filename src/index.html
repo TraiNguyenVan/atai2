@@ -9,6 +9,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #eaf6fb;
+        }
+        .main-content {
+            max-width: 950px;
+            margin: 36px auto 24px auto;
+            padding: 36px 32px 32px 32px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+            font-family: 'Varela Round',sans-serif;
+            color: #22313f;
+            line-height: 1.8;
+        }
+        .main-content h2 {
+            color: #1a8cff;
+            font-size: 2.1em;
+            margin-bottom: 18px;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+        .main-content h3 {
+            color: #2d6a8a;
+            font-size: 1.25em;
+            margin-top: 32px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .main-content p {
+            margin: 10px 0 18px 0;
+            font-size: 1.08em;
+        }
+        .main-content ul {
+            margin: 10px 0 18px 20px;
+            padding: 0;
+            font-size: 1.05em;
+        }
+        .main-content ul li {
+            margin-bottom: 7px;
+        }
+        .main-content ul.two-col {
+            columns: 2 350px;
+            column-gap: 40px;
+            list-style: disc inside;
+        }
+        .main-content em {
+            color: #1a8cff;
+            font-style: italic;
+            font-size: 1.08em;
+        }
+        @media (max-width: 700px) {
+            .main-content {
+                padding: 18px 6vw;
+            }
+            .main-content ul.two-col {
+                columns: 1;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -24,21 +84,10 @@
             </nav>
     </header>
 
-    <!-- <video src="pnkb.mkv" muted loop autoplay><    /video> -->
-    <!-- <img src="./" alt=""> -->
+    <!-- Giới thiệu chi tiết về du lịch Quảng Bình -->
     
-    <!-- <div class="glass">
-    <div class="info">
-        <h1>Động Phong Nha</h1><br>
-        <div class="sub">
-             <p><br>
-             </p> 
-        </div>
-    </div>
-
-        <button id="but" onclick="window.location.href='https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99ng_Phong_Nha'">Khám phá ngay</button>
-    </div> -->
-
+    <!-- Giới thiệu tổng quan về Quảng Bình -->
+    
     <div class="carousel-container">
         <button class="carousel-btn left" onclick="prevBlock()">&#8592;</button>
         <div class="carousel">
@@ -53,7 +102,7 @@
                 <div class="block-content">
                     <h2 style="font-family: 'Varela Round', sans-serif;">Hang Sơn Đoòng</h2>
                     <p style="font-family: 'Varela Round', sans-serif;">Hang động lớn nhất thế giới với hệ sinh thái độc đáo.</p>
-                    <button class="but" onclick="window.location.href='https://vi.wikipedia.org/wiki/Hang_S%C6%A1n_%C4%90o%C3%B2ng'">Khám phá ngay</button>
+                    <button class="but" onclick="window.location.href='https://vi.wikipedia.org/wiki/Hang_S%C6%A0n_%C4%90o%C3%B2ng'">Khám phá ngay</button>
                 </div>
             </div>
             <div class="block" data-bg="nhatle.jpg">
@@ -65,6 +114,96 @@
             </div>
         </div>
         <button class="carousel-btn right" onclick="nextBlock()">&#8594;</button>
+    </div>
+
+    <div class="main-content">
+        <h2>Khám phá Quảng Bình - Thiên đường du lịch miền Trung</h2>
+        <p>
+            <strong>Quảng Bình</strong> là một tỉnh ven biển thuộc miền Trung Việt Nam, nổi tiếng với cảnh quan thiên nhiên hùng vĩ, hệ thống hang động kỳ vĩ và bãi biển tuyệt đẹp. Nơi đây được mệnh danh là "vương quốc hang động" với hơn 400 hang lớn nhỏ, trong đó có những cái tên nổi tiếng thế giới như Sơn Đoòng, Phong Nha, Thiên Đường. Không chỉ hấp dẫn bởi thiên nhiên, Quảng Bình còn là vùng đất giàu truyền thống lịch sử, văn hóa và là quê hương của Đại tướng Võ Nguyên Giáp.
+        </p>
+        <h3>Lịch sử và vị trí địa lý</h3>
+        <p>
+            Quảng Bình nằm ở trung tâm dải đất miền Trung, phía Bắc giáp Hà Tĩnh, phía Nam giáp Quảng Trị, phía Tây là dãy Trường Sơn hùng vĩ tiếp giáp Lào, phía Đông là biển Đông. Vùng đất này từng là nơi giao thoa của nhiều nền văn hóa, là địa bàn chiến lược trong các cuộc kháng chiến. Ngày nay, Quảng Bình phát triển mạnh về du lịch nhờ sở hữu nhiều di sản thiên nhiên quý giá.
+        </p>
+        <h3>Khí hậu và thời điểm lý tưởng để du lịch</h3>
+        <p>
+            Khí hậu Quảng Bình mang đặc trưng nhiệt đới gió mùa, chia hai mùa rõ rệt: mùa khô (tháng 3-9) và mùa mưa (tháng 10-2 năm sau). Mùa khô nắng nhiều, biển lặng, thích hợp cho các hoạt động ngoài trời, tắm biển, khám phá hang động. Mùa mưa có thể xuất hiện mưa lớn, lũ lụt, nên hạn chế du lịch vào thời gian này. Thời điểm đẹp nhất để đến Quảng Bình là từ tháng 4 đến tháng 8.
+        </p>
+        <h3>Phương tiện di chuyển đến và trong Quảng Bình</h3>
+        <ul class="two-col">
+            <li><strong>Máy bay:</strong> Sân bay Đồng Hới có các chuyến bay từ Hà Nội, TP.HCM, Hải Phòng, Đà Lạt... thuận tiện cho du khách.</li>
+            <li><strong>Tàu hỏa:</strong> Ga Đồng Hới nằm trên tuyến Bắc - Nam, mỗi ngày có nhiều chuyến tàu dừng đỗ.</li>
+            <li><strong>Xe khách:</strong> Các tuyến xe giường nằm Bắc - Nam đều đi qua Quảng Bình, bến xe Đồng Hới nằm gần trung tâm thành phố.</li>
+            <li><strong>Di chuyển nội tỉnh:</strong> Taxi, xe máy, xe đạp, xe buýt, thuê xe du lịch đều phổ biến. Đường sá thuận tiện, dễ đi lại giữa các điểm tham quan.</li>
+        </ul>
+        <h3>Những điểm đến nổi bật không thể bỏ qua</h3>
+        <ul class="two-col">
+            <li><strong>Vườn quốc gia Phong Nha - Kẻ Bàng:</strong> Di sản thiên nhiên thế giới với hệ thống hang động, núi đá vôi, rừng nguyên sinh, đa dạng sinh học bậc nhất Việt Nam. Nơi đây có hơn 400 hang động lớn nhỏ, nhiều loài động thực vật quý hiếm.</li>
+            <li><strong>Động Phong Nha:</strong> Được mệnh danh là "Đệ nhất động", nổi bật với sông ngầm dài, thạch nhũ lung linh, là điểm đến hàng đầu cho du khách yêu thích khám phá.</li>
+            <li><strong>Động Thiên Đường:</strong> Hang động khô dài nhất châu Á, cảnh quan kỳ ảo, hệ thống thạch nhũ đa dạng, được ví như "hoàng cung trong lòng đất".</li>
+            <li><strong>Hang Sơn Đoòng:</strong> Hang động lớn nhất thế giới, chỉ mở cửa cho một số lượng khách hạn chế mỗi năm, là điểm đến mơ ước của các nhà thám hiểm toàn cầu.</li>
+            <li><strong>Suối nước Moọc:</strong> Khu sinh thái xanh mát, nước suối trong vắt, thích hợp tắm mát, chèo kayak, picnic giữa thiên nhiên.</li>
+            <li><strong>Bãi Đá Nhảy:</strong> Bãi biển với những khối đá tự nhiên độc đáo, cảnh quan hoang sơ, lý tưởng để chụp ảnh và tắm biển.</li>
+            <li><strong>Biển Nhật Lệ:</strong> Bãi biển trung tâm thành phố Đồng Hới, cát trắng mịn, nước trong xanh, nhiều dịch vụ vui chơi giải trí.</li>
+            <li><strong>Đền thờ Đại tướng Võ Nguyên Giáp:</strong> Địa chỉ tâm linh, nơi tưởng nhớ vị tướng huyền thoại của dân tộc Việt Nam.</li>
+            <li><strong>Làng bích họa Cảnh Dương:</strong> Làng chài ven biển nổi bật với những bức tranh tường sống động, phản ánh đời sống ngư dân.</li>
+        </ul>
+        <h3>Trải nghiệm và hoạt động hấp dẫn</h3>
+        <ul>
+            <li>Khám phá hang động bằng thuyền, trekking, zipline, chèo kayak, tắm suối, cắm trại giữa rừng nguyên sinh.</li>
+            <li>Tham gia tour mạo hiểm: chinh phục hang Sơn Đoòng, Tú Làn, Hang Én, hang Va, hang Nước Nứt...</li>
+            <li>Đạp xe xuyên rừng, ngắm cảnh đồng quê, trải nghiệm cuộc sống làng chài ven biển.</li>
+            <li>Tắm biển, chơi thể thao dưới nước, thưởng thức hải sản tươi ngon tại các bãi biển Nhật Lệ, Bảo Ninh, Đá Nhảy.</li>
+            <li>Tham quan các di tích lịch sử, văn hóa: nhà lưu niệm Đại tướng Võ Nguyên Giáp, nhà thờ Tam Tòa, thành cổ Đồng Hới.</li>
+        </ul>
+        <h3>Ẩm thực Quảng Bình</h3>
+        <ul class="two-col">
+            <li><strong>Bánh bột lọc:</strong> Nhân tôm thịt, vỏ bánh trong suốt, ăn kèm nước mắm chua ngọt.</li>
+            <li><strong>Bánh xèo Quảng Hòa:</strong> Vỏ bánh giòn, nhân tôm thịt, ăn kèm rau sống và nước chấm đặc trưng.</li>
+            <li><strong>Cháo canh:</strong> Sợi bánh canh mềm, nước dùng ngọt thanh, ăn cùng cá lóc, chả cua.</li>
+            <li><strong>Khoai deo:</strong> Đặc sản làm từ khoai lang phơi khô, dẻo ngọt tự nhiên.</li>
+            <li><strong>Cá khoai, lẩu cá khoai:</strong> Loài cá đặc trưng vùng biển Quảng Bình, thịt mềm, ngọt, thường dùng nấu lẩu hoặc canh chua.</li>
+            <li><strong>Mực một nắng, ruốc biển, bánh bèo, bánh nậm, bánh lọc rán...</strong></li>
+        </ul>
+        <h3>Lưu trú và dịch vụ du lịch</h3>
+        <p>
+            Quảng Bình có hệ thống khách sạn, resort, homestay đa dạng từ bình dân đến cao cấp, tập trung chủ yếu ở thành phố Đồng Hới và khu vực Phong Nha. Một số địa chỉ nổi bật: Sun Spa Resort, Muong Thanh Holiday, Phong Nha Lake House Resort, Chày Lập Farmstay, Easy Tiger Hostel, Victory Road Villas...
+        </p>
+        <h3>Văn hóa, lễ hội và con người Quảng Bình</h3>
+        <p>
+            Người Quảng Bình chân chất, hiếu khách, giàu nghị lực. Đến đây, du khách dễ dàng cảm nhận sự thân thiện, nhiệt tình của người dân địa phương. Quảng Bình còn có nhiều lễ hội truyền thống như lễ hội đua thuyền trên sông Kiến Giang, lễ hội cầu ngư, lễ hội rằm tháng Ba... phản ánh đời sống văn hóa phong phú của vùng đất này.
+        </p>
+        <h3>Mẹo du lịch và lưu ý quan trọng</h3>
+        <ul>
+            <li>Nên đặt tour hang động (Sơn Đoòng, Tú Làn, Hang Én...) trước nhiều tháng vì số lượng khách giới hạn.</li>
+            <li>Chuẩn bị trang phục phù hợp cho hoạt động khám phá: giày thể thao, áo dài tay, mũ, kem chống nắng, thuốc chống côn trùng.</li>
+            <li>Luôn tuân thủ hướng dẫn của ban quản lý khu du lịch, bảo vệ môi trường tự nhiên.</li>
+            <li>Thưởng thức ẩm thực tại các quán ăn địa phương để cảm nhận trọn vẹn hương vị Quảng Bình.</li>
+            <li>Chú ý dự báo thời tiết, tránh đi vào mùa mưa lũ (tháng 10-12).</li>
+            <li>Luôn mang theo giấy tờ tùy thân, tiền mặt và các vật dụng cá nhân cần thiết.</li>
+        </ul>
+        <h3>Gợi ý lịch trình du lịch Quảng Bình</h3>
+        <ul>
+            <li>
+                <strong>2 ngày 1 đêm:</strong> Tham quan động Phong Nha, động Thiên Đường, suối nước Moọc, tắm biển Nhật Lệ, thưởng thức đặc sản địa phương.
+            </li>
+            <li>
+                <strong>3 ngày 2 đêm:</strong> Thêm trải nghiệm trekking hang Tú Làn hoặc khám phá bãi Đá Nhảy, làng bích họa Cảnh Dương, tham quan đền thờ Đại tướng Võ Nguyên Giáp.
+            </li>
+            <li>
+                <strong>4-5 ngày:</strong> Tham gia tour mạo hiểm hang Sơn Đoòng (nếu đặt được), khám phá sâu hơn các hang động, trải nghiệm cuộc sống làng quê, giao lưu văn hóa với người dân bản địa.
+            </li>
+        </ul>
+        <h3>Thông tin hữu ích khác</h3>
+        <ul class="two-col">
+            <li>Hệ thống ATM, ngân hàng, bệnh viện, cửa hàng tiện lợi đều có ở trung tâm Đồng Hới.</li>
+            <li>Wifi miễn phí tại nhiều khách sạn, quán cà phê, nhà hàng.</li>
+            <li>Ngôn ngữ sử dụng chủ yếu là tiếng Việt, một số nơi phục vụ khách quốc tế có thể giao tiếp tiếng Anh cơ bản.</li>
+            <li>Giá cả dịch vụ hợp lý, người dân thân thiện, sẵn sàng hỗ trợ du khách.</li>
+        </ul>
+        <p>
+            <em>Quảng Bình - nơi hội tụ giữa thiên nhiên kỳ vĩ, văn hóa đặc sắc và con người thân thiện, chắc chắn sẽ mang đến cho bạn những trải nghiệm khó quên. Hãy lên kế hoạch và khám phá vùng đất tuyệt vời này ngay hôm nay!</em>
+        </p>
     </div>
 
     <script>

@@ -48,17 +48,17 @@ body {
 
 .navbar li a{
     text-decoration: none;
-    color: #eaf6fb;
+    color: #010405;
 }
 
 #lo{
     text-decoration: none;
-    background-color: #2BD9FE;
+    background-color: #abd2d4;
     color:white;
     font-family: 'Varela Round', sans-serif;
     border: none;
     padding:10px 20px;
-    border-radius: 5%;
+    border-radius: 5%;                                                                                                                                                                                                              
     font-size: 16px;
 }
 
